@@ -1,0 +1,133 @@
+/* Font Awsome Icon */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* Google fonts */
+/* General Design */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.3;
+  font-size: 16px;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* Aside */
+.aside {
+  width: 270px;
+  position: fixed;
+  height: 100%;
+  border-right: 1px solid #e8dfec;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 30px;
+}
+/* Section */
+.section {
+  background-color: #f2f2fc;
+  min-height: 100vh;
+  display: block;
+  padding: 0 30px;
+}
+/* Main content */
+.main-content {
+  padding-left: 270px;
+  display: block;
+}
+.aside .logo {
+  padding: 30px 0;
+}
+.aside .logo a {
+  font-size: 40px;
+  font-weight: 700;
+  color: #302e4d;
+  display: inline-block;
+  position: relative;
+  padding: 1px 6px;
+}
+.aside .logo a::before {
+  content: "";
+  width: 35px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 4px solid orange;
+  border-left: 4px solid orange;
+}
+.aside .logo a::after {
+  content: "";
+  width: 35px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-right: 4px solid orange;
+  border-bottom: 4px solid orange;
+}
+.aside .nav {
+  margin: 80px 0;
+  list-style: none;
+  padding: 5px 0;
+}
+.aside .nav li {
+  display: block;
+}
+.aside .nav a {
+  padding: 5px 0;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  display: block;
+  border-bottom: 1px solid #e8dfec;
+  transition: all 0.3s ease;
+}
+.aside .nav a:hover {
+  padding-left: 5px;
+  color: orange;
+}
+.aside .nav a .fa {
+  margin-right: 5px;
+}
+.aside .copyright-text {
+  font-size: 14px;
+  color: #7d7d7d;
+}
+.home {
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+}
+.home-content {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+.intro {
+  text-align: center;
+}
+.intro img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 8px solid #ffffff;
+}
+.social {
+  margin: 5px 0;
+}
+.social a {
+  padding: 0 4px;
+  width: 35px;
+  height: 35px;
+}
