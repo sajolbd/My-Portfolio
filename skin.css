@@ -1,0 +1,14 @@
+/* before and after fucntion */
+.aside .logo a::before {
+  border-top: 4px solid red;
+  border-left: 4px solid red;
+}
+.aside .logo a::after {
+  border-right: 4px solid red;
+  border-bottom: 4px solid red;
+}
+.social a::before {
+  border: 1px solid red;
+  border-radius: 50%;
+  box-shadow: 2px 2px black;
+}
