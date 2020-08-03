@@ -1,14 +1,33 @@
 /* before and after fucntion */
 .aside .logo a::before {
-  border-top: 4px solid red;
-  border-left: 4px solid red;
+  border-top: 4px solid #e63131;
+  border-left: 4px solid #e63131;
 }
 .aside .logo a::after {
-  border-right: 4px solid red;
-  border-bottom: 4px solid red;
+  border-right: 4px solid #e63131;
+  border-bottom: 4px solid #e63131;
 }
 .social a::before {
-  border: 1px solid red;
+  border: 1px solid #e63131;
   border-radius: 50%;
   box-shadow: 2px 2px black;
 }
+.section-title h2 ::before {
+  background-color: #e63131;
+}
+.about-details {
+  margin-top: 40px;
+  flex: 0 0 50%;
+}
+.about-item {
+  background-color: #e63131;
+}
+/* <div class="about-item">
+<p>Birthday : <span>June 02 1997</span></p>
+</div>
+<div class="about-item">
+<p>Birthday : <span>June 02 1997</span></p>
+</div>
+<div class="about-item">
+<p>Birthday : <span>June 02 1997</span></p>
+</div> */

@@ -19,14 +19,32 @@ body {
 ::after {
   box-sizing: border-box;
 }
-
+.btn {
+  background-color: #e63131;
+  padding: 10px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 40%;
+  transition: all 0.3s ease;
+  display: inline-block;
+  white-space: nowrap;
+  margin-right: 20px;
+}
+.btn:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .section {
-  background-color: #000;
+  background-color: #f2f2fc;
   min-height: 100vh;
   display: block;
   padding: 0 30px;
 }
-
+.section .container {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
 .main-content {
   padding-left: 270px;
 }
@@ -34,7 +52,9 @@ body {
   max-width: 1100px;
   margin: auto;
 }
-
+.hidden {
+  display: none !important;
+}
 /* General Design End*/
 
 /* Aside */
@@ -47,7 +67,7 @@ body {
   left: 0;
   z-index: 10;
   padding: 30px;
-  background-color: #424242;
+  background-color: #ffffff;
 }
 .aside .logo {
   padding: 30px 0;
@@ -91,12 +111,12 @@ body {
   font-weight: 600;
   line-height: 25px;
   display: block;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #e8dfec;
   transition: all 0.3s ease;
 }
 .aside .nav a:hover {
   padding-left: 5px;
-  color: red;
+  color: #e63131;
 }
 .aside .nav a .fa {
   margin-right: 5px;
@@ -114,10 +134,10 @@ body {
 }
 
 /* Home  Section End */
-
+/* home section start */
 .intro {
   text-align: center;
-  color: #ffff;
+  color: black;
 }
 .intro img {
   width: 200px;
@@ -134,14 +154,16 @@ body {
   padding: 5px 10px;
   width: 35px;
   height: 35px;
-  color: #fff;
+  color: black;
   position: relative;
   display: inline-block;
 }
 .social a:hover {
-  background-color: red;
+  background-color: #e63131;
   border-radius: 50%;
 }
+/* home section end */
+
 /* social icon before after apply */
 .social a::before {
   content: "";
@@ -159,3 +181,138 @@ body {
   bottom: 0;
   right: 0;
 }
+
+/* About section */
+.row {
+  display: flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  -ms-flex-wrap: wrap;
+}
+.section-title {
+  flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  max-width: 100%;
+}
+.padd-15 {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.section-title h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #302e4d;
+  position: relative;
+  margin: 0;
+}
+/* About section end */
+/* about section before after start*/
+.section-title h2 ::before {
+  content: "";
+  width: 50px;
+  height: 4px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+/* about section before after end*/
+/* about section text start */
+.padd-15 {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.about-title {
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+.about-title h1 {
+  font-size: 40px;
+  color: #302e4d;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+}
+.about-title h1::before {
+  content: "";
+  height: 4px;
+  width: 50px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #e63131;
+}
+.about-title h1::after {
+  content: "";
+  height: 4px;
+  width: 25px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #e63131;
+  margin-top: 8px;
+}
+.about-content {
+  /* background-color: red; */
+  -ms-flex: 0 0 90%;
+  flex: 0 0 90%;
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+.about-text {
+  max-width: 100%;
+}
+.about .about-content .about-text h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #302e4d;
+}
+.about .about-content .about-text h3 span {
+  color:#e63131;
+}
+.about .about-content .about-text p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #504e70;
+  margin: 0;
+}
+.personal-info {
+  /* background-color: red; */
+  -ms-flex: 0 0 55%;
+  flex: 0 0 55%;
+  max-width: 55%;
+}
+.personal-skill {
+  /* background-color: blue; */
+  -ms-flex: 0 0 35%;
+  flex: 0 0 35%;
+  max-width: 35%;
+}
+.info {
+  /* background-color: red; */
+  -ms-flex: 0 0 45%;
+  flex: 0 0 45%;
+  max-width: 45%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #302e4d;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8dfec;
+}
+.info span {
+  font-weight: 300;
+  color: #504e70;
+  display: inline-block;
+}
+.button {
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+/* about section text End */
