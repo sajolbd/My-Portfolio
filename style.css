@@ -25,7 +25,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   color: #fff;
-  border-radius: 40%;
+  border-radius: 40px;
   transition: all 0.3s ease;
   display: inline-block;
   white-space: nowrap;
@@ -52,9 +52,9 @@ body {
   max-width: 1100px;
   margin: auto;
 }
-.hidden {
+/* .hidden {
   display: none !important;
-}
+} */
 /* General Design End*/
 
 /* Aside */
@@ -274,7 +274,7 @@ body {
   color: #302e4d;
 }
 .about .about-content .about-text h3 span {
-  color:#e63131;
+  color: #e63131;
 }
 .about .about-content .about-text p {
   font-size: 16px;
@@ -311,8 +311,98 @@ body {
   display: inline-block;
 }
 .button {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 1000%;
+  max-width: 100%;
   margin-top: 50px;
   margin-left: 40px;
+  margin-bottom: 60px;
+}
+.education {
+  -ms-flex: 0 045%;
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+.experience {
+  -ms-flex: 0 045%;
+  flex: 0 0 45%;
+  max-width: 45%;
 }
 
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #302e4d;
+  margin-bottom: 30px;
+}
+.timeline-box {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.timeline-box {
+}
+.timeline {
+  background-color: #fdf9ff;
+  padding: 30px 15px;
+  border: 1px solid #d4d4d3;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.timeline-dot {
+  position: relative;
+}
+.timeline-item {
+  padding: 20px;
+  border-left: 1px solid #e63131;
+  position: relative;
+}
+.timeline-item::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #e63131;
+  border-radius: 100%;
+  top: 0%;
+  left: -2%;
+  position: absolute;
+}
+.timeline-item.last::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #e63131;
+  border-radius: 100%;
+  bottom: 0%;
+  left: -2%;
+  position: absolute;
+}
+.timeline-date .fa {
+  margin-right: 5px;
+}
+.timeline-date {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: #504e70;
+}
+.timeline-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: #302e4d;
+}
+.timeline-text {
+  font-size: 16px;
+  -ms-flex: 0 0 90%;
+  flex: 0 0 90%;
+  max-width: 100%;
+  color: #7d7d7d;
+  margin-bottom: 40px;
+}
 /* about section text End */
